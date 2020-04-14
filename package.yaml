@@ -1,0 +1,15 @@
+name: diagrams-graphviz-example
+dependencies:
+  - base
+  - diagrams
+  - diagrams-lib
+  - diagrams-graphviz
+  - diagrams-svg
+  - fgl
+  - graphviz
+  - SVGFonts
+  - containers
+library:
+  source-dirs: .
+  exposed-modules:
+    - Example

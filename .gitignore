@@ -16,7 +16,10 @@ cabal.sandbox.config
 *.aux
 *.hp
 *.eventlog
+*.cabal
 .stack-work/
+stack.yaml.lock
+*.svg
 cabal.project.local
 cabal.project.local~
 .HTF/
