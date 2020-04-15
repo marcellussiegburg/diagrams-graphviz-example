@@ -29,17 +29,15 @@ net = mkGraph
    (1, "t1"),
    (2,"s2"),
    (3, "t2")]
-  ([(0,1,"1"),
+  [(0,1,"1"),
    (1,2,"1"),
    (0,3,"1"),
    (2,3,"1")]
-  )
 
 drawNode :: PreparedFont Double -> String -> Point V2 Double -> Diagram B
-drawNode pfont l p = place
-  (center (text' pfont l)
-    `atop` circle 20 # named l)
-  p
+drawNode pfont l = place
+  $ center (text' pfont l)
+  `atop` circle 20 # named l
 
 drawEdge :: PreparedFont Double -> String -> String -> String -> Path V2 Double -> Diagram B -> Diagram B
 drawEdge f l l1 l2 path d = 
